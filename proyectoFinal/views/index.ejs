@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Index</title>
+</head>
+<body>
+    
+    <h1 class="lista">Lista de usuarios</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Acciones</th>
+        </tr>
+        <!-- JS -->
+         <% users.forEach(user =>{  %>
+        <tr>
+            <td><%=user.id %></td>
+            <td><%=user.nombre %></td>
+            <td><%=user.correo %></td>
+            <td>
+                <a href="/edit/<%= user.id %>">Editar</a> |
+                <a href="/delete/<%= user.id %>" class="eliminarUser">Eliminar</a>
+            </td>
+
+        </tr>
+        <% }); %>
+    </table>
+
+    <hr>
+    <p class="agregarUser">
+    <a href="/adduser">Agregar Usuario</a>
+    </p>
+</body>
+</html>

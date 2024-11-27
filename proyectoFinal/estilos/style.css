@@ -1,0 +1,101 @@
+*{
+    font-size: 25px;
+    
+    /* body{background-color: green;} */
+}
+
+body{
+    background-image: url('fondo.jpg');
+    /* background-size: 1366px 700px; */
+    background-size: cover;
+}
+
+li {color:blue}
+
+h1{
+    font-size: 40px;
+    
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 20px;
+}
+.lista{
+    border-bottom: 20px #11a737 groove; 
+}
+.agregar{
+    border-bottom: 20px #101175 groove; 
+}
+.editar{
+    border-bottom: 20px #767e0c groove; 
+}
+
+tr{
+    margin: auto;
+}
+
+table{
+    margin: 0 auto;
+}
+
+th{
+    border-style: solid;
+    background-color: rgba(110, 210, 60, 0.7);
+}
+
+td{
+    border: 2px dotted;
+    border-radius: 6px;
+    border-color: rgba(50, 50, 50, 0.6);
+    background-color: rgba(20, 60, 200, 0.4);
+    color: rgba(180, 180, 180, 1);
+    margin-top: 20px;
+}
+
+tr a{
+    font-family: sans-serif;
+}
+
+
+a:link{
+    color: rgb(16, 15, 66);
+}
+
+a:visited{
+    color: rgb(16, 15, 66);
+}
+a:hover{
+    color: rgb(114, 114, 236);
+}
+a{
+    cursor: pointer;
+}
+.eliminarUser:hover{
+    transition: color 2s ease;
+    color: red;
+}
+
+.agregarUser{
+    font-family: sans-serif;
+    font-size: 36px;
+    outline: 8px solid rgba(207, 38, 131, 0.5);
+    text-decoration: none;
+    background-color: rgba(252, 252, 252, 0.5);
+    
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+form{
+    color: rgb(219, 233, 210);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+}
+form label{
+    margin-left: 30px;
+}
+
+button{
+    margin-left: 40px;
+}
